@@ -33,7 +33,8 @@ export interface Project {
 export async function getBlogPosts(limit?: number): Promise<BlogPost[]> {
   try {
     const response = await notion.databases.query({
-      database_id: process.env.BLOG_DATABASE_ID!,
+     // database_id: process.env.BLOG_DATABASE_ID!,
+      database_id: 24e0a8c56ba880afaf89e7cdf2b0b0a3,
       filter: {
         property: 'Published',
         checkbox: {
