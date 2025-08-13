@@ -1,10 +1,10 @@
-import { Header } from "@/components/header"
-import { HeroSection } from "@/components/hero-section"
-import { PortfolioSection } from "@/components/portfolio-section"
+// 기존
 import { BlogSection } from "@/components/blog-section"
-import { AboutSection } from "@/components/about-section"
-import { ContactSection } from "@/components/contact-section"
-import { Footer } from "@/components/footer"
+import { PortfolioSection } from "@/components/portfolio-section"
+
+// 변경 후 (Server Component로 사용)
+import { BlogSection } from "@/components/blog-section"
+import { PortfolioSection } from "@/components/portfolio-section"
 
 export default function Home() {
   return (
