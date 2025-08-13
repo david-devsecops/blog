@@ -34,7 +34,7 @@ export async function getBlogPosts(limit?: number): Promise<BlogPost[]> {
   try {
     const response = await notion.databases.query({
      // database_id: process.env.BLOG_DATABASE_ID!,
-      database_id: "24e0a8c56ba880afaf89e7cdf2b0b0a3",
+      database_id: "24e0a8c56ba8803083eceeb9218b8b94",
       filter: {
         property: 'Published',
         checkbox: {
@@ -73,7 +73,8 @@ export async function getBlogPosts(limit?: number): Promise<BlogPost[]> {
 export async function getProjects(): Promise<Project[]> {
   try {
     const response = await notion.databases.query({
-      database_id: process.env.PROJECTS_DATABASE_ID!,
+     // database_id: process.env.PROJECTS_DATABASE_ID!,
+      database_id: "24e0a8c56ba880afaf89e7cdf2b0b0a3",
       sorts: [
         {
           property: 'Featured',
